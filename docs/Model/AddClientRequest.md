@@ -1,0 +1,63 @@
+# AddClientRequest
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**account_balance** | **double** | The client’s current [account balance](https://mindbody-online-support.force.com/support/s/article/203262013-Adding-account-payments-video-tutorial?language&#x3D;en_US). | [optional] 
+**action** | **string** | The action taken. | [optional] 
+**active** | **bool** | When &#x60;true&#x60;, indicates that the client is active at the site.&lt;br /&gt;  When &#x60;false&#x60;, indicates that the client is not active at the site. | [optional] 
+**address_line1** | **string** | The first line of the client’s street address. | [optional] 
+**address_line2** | **string** | The second line of the client’s street address, if needed. | [optional] 
+**appt_gender_pref_male** | **bool** | When &#x60;true&#x60;, indicates that the client prefers services to be provided by a male service provider.&lt;br /&gt;  When &#x60;false&#x60;, indicates that the client prefers services to be provided by a female service provider.&lt;br /&gt;  When &#x60;null&#x60;, indicates that the client has no preference.  Default: **null** | [optional] 
+**birth_date** | [**\DateTime**](\DateTime.md) | The client’s date of birth. | [optional] 
+**city** | **string** | The client’s city. | [optional] 
+**client_credit_card** | [**\Swagger\Client\Model\ClientCreditCard**](ClientCreditCard.md) | Contains information about the client’s credit card. | [optional] 
+**client_indexes** | [**\Swagger\Client\Model\AssignedClientIndex[]**](AssignedClientIndex.md) | Contains a list of the indexes and client index values to be assigned to the client. | [optional] 
+**client_relationships** | [**\Swagger\Client\Model\ClientRelationship[]**](ClientRelationship.md) | Contains information about client relationships to be assigned to the client. | [optional] 
+**country** | **string** | The country in which the client is located. | [optional] 
+**creation_date** | [**\DateTime**](\DateTime.md) | The date when the client was added to the business, either by the client from the online store or by a staff member at the subscriber’s business. This value always returns in the format yyyy-mm-ddThh:mm:ss:ms. | [optional] 
+**custom_client_fields** | [**\Swagger\Client\Model\CustomClientFieldValue[]**](CustomClientFieldValue.md) | Contains information about the custom fields to be assigned to the client. | [optional] 
+**email** | **string** | The client’s email address. | [optional] 
+**emergency_contact_info_email** | **string** | The email address of the client’s emergency contact.&lt;br /&gt;  For more information, see [Children’s program features(emergency contact information)](https://support.mindbodyonline.com/s/article/203259283-Children-s-program-features-emergency-contact-information?language&#x3D;en_US). | [optional] 
+**emergency_contact_info_name** | **string** | The name of the client’s emergency contact. | [optional] 
+**emergency_contact_info_phone** | **string** | The phone number of the client’s emergency contact. | [optional] 
+**emergency_contact_info_relationship** | **string** | The client’s relationship with the emergency contact, for example, mother or spouse. | [optional] 
+**first_appointment_date** | [**\DateTime**](\DateTime.md) | The date of the client’s first booked appointment at the business. | [optional] 
+**first_name** | **string** | The client’s first name. You must specify a first name when you add a client. | 
+**gender** | **string** | The client’s gender. | [optional] 
+**home_location** | [**\Swagger\Client\Model\Location**](Location.md) | Sets the client’s home location to the passed location, based on its ID. | [optional] 
+**home_phone** | **string** | The client’s home phone number. | [optional] 
+**is_company** | **bool** | When &#x60;true&#x60;, indicates that the client should be marked as a company at the business.&lt;br /&gt;  When &#x60;false&#x60;, indicates the client is an individual and does not represent a company. | [optional] 
+**is_prospect** | **bool** | This value is set only if the business owner allows individuals to be prospects.&lt;br /&gt;  When &#x60;true&#x60;, indicates that the client should be marked as a prospect for the business.&lt;br /&gt;  When &#x60;false&#x60;, indicates that the client should not be marked as a prospect for the business. | [optional] 
+**last_formula_notes** | **string** | The last [formula note](https://support.mindbodyonline.com/s/article/203259903-Appointments-Formula-notes?language&#x3D;en_US) entered for the client. | [optional] 
+**last_modified_date_time** | [**\DateTime**](\DateTime.md) | The UTC date and time when the client’s information was last modified. | [optional] 
+**last_name** | **string** | The client’s last name. You must specify a last name when you add a client. | 
+**liability** | [**\Swagger\Client\Model\Liability**](Liability.md) | Contains the client’s liability agreement information for the business. | [optional] 
+**liability_release** | **bool** | Passing &#x60;true&#x60; sets the client’s liability information as follows:  * &#x60;IsReleased&#x60; is set to &#x60;true&#x60;.  * &#x60;AgreementDate&#x60; is set to the time zone of the business when the call was processed.  * &#x60;ReleasedBy&#x60; is set to &#x60;null&#x60; if the call is made by the client, &#x60;0&#x60; if the call was made by the business owner, or to a specific staff member’s ID if a staff member made the call.  Passing &#x60;false&#x60; sets the client’s liability information as follows:  * &#x60;IsReleased&#x60; is set to &#x60;false&#x60;.  * &#x60;AgreementDate&#x60; is set to &#x60;null&#x60;.  * &#x60;ReleasedBy&#x60; is set to &#x60;null&#x60;. | [optional] 
+**membership_icon** | **int** | The ID of the membership icon displayed next to the client’s name, if the client has a membership on their account. | [optional] 
+**middle_name** | **string** | The client’s middle name. | [optional] 
+**mobile_phone** | **string** | The client’s mobile phone number. | [optional] 
+**mobile_provider** | **int** | The client&#39;s mobile provider. | [optional] 
+**new_id** | **string** | When passed, sets the client&#39;s ID to this value. Otherwise, the client&#39;s ID will match their &#x60;UniqueId&#x60;. | [optional] 
+**notes** | **string** | Any notes entered on the client’s account by staff members. This value should never be shown to clients unless the business owner has a specific reason for showing them. | [optional] 
+**photo_url** | **string** | The URL for the client’s photo, if one has been uploaded. | [optional] 
+**postal_code** | **string** | The client’s postal code. | [optional] 
+**prospect_stage** | [**\Swagger\Client\Model\ProspectStage**](ProspectStage.md) | Contains information about the client [prospect stage](https://support.mindbodyonline.com/s/article/206176457-Prospect-Stages?language&#x3D;en_US). | [optional] 
+**red_alert** | **string** | Contains any red alert information entered by the business owner for the client. | [optional] 
+**referred_by** | **string** | Specifies how the client was referred to the business. You can get a list of possible strings using the &#x60;GET ClientReferralTypes&#x60; endpoint.&lt;br /&gt;  For more information, see [Referral types and referral subtypes](https://support.mindbodyonline.com/s/article/203259393-Referral-types-and-referral-subtypes?language&#x3D;en_US). | [optional] 
+**sales_reps** | [**\Swagger\Client\Model\SalesRep[]**](SalesRep.md) | Contains information about the sales representatives to be assigned to the new client. | [optional] 
+**site_id** | **int** | The ID of the site. | [optional] 
+**state** | **string** | The client’s state. | [optional] 
+**status** | **string** | The client’s status. | [optional] 
+**test** | **bool** | When &#x60;true&#x60;, indicates that test mode is enabled. The method is validated, but no client data is added or updated.&lt;br /&gt;  Default: **false** | [optional] 
+**unique_id** | **int** | The client’s system-generated ID at the business. This value cannot be changed by business owners and is always unique across all clients at the business. This ID is not widely used in the Public API, but can be used by your application to uniquely identify clients. | [optional] 
+**work_extension** | **string** | The client’s work phone extension number. | [optional] 
+**work_phone** | **string** | The client’s work phone number. | [optional] 
+**yellow_alert** | **string** | Contains any yellow alert information entered by the business owner for the client. | [optional] 
+**send_schedule_emails** | **bool** | When &#x60;true&#x60;, indicates that the client opts to receive schedule emails. | [optional] 
+**send_account_emails** | **bool** | When &#x60;true&#x60;, indicates that the client opts to receive account emails. | [optional] 
+**send_promotional_emails** | **bool** | When &#x60;true&#x60;, indicates that the client opts to receive promotional emails. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
